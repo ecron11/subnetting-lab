@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font awesome  -->
+    <script src="https://kit.fontawesome.com/0ea7dcf889.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <title>Subnetting Excercise</title>
+    <link rel="shortcut icon" href="img/server-favicon.ico">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center">Subnetting Practice</h1>
+        <p class="lead text-center">
+            Please Enter the CIDR notation for each organization group. Each group's subnet should only be the minimum size.
+        </p>
+        <div id="groups-container" class="row justify-content-center">
+            <!-- <div class="col-md-4 col-sm-6 org-group"> -->
+            <div class="col-12 org-group">
+                <div class="card">
+                    <div class="card-header text-center">
+                        Marketing
+                    </div>
+                    <div class="card-body">
+                        <button id="gen-new-btn" class="btn btn-primary btn-block">
+                            Generate New Question
+                        </button>
+                        <p class="card-text">This group in the organization requires <strong id="number-of-hosts">25 hosts</strong>.</p>
+                        <label for="CIDR-notation">CIDR Notation:</label>
+                        <input class="form-control" type="text" name="CIDR-notation" id="CIDR-notation" placeholder="/XX">
+                        <button id="check-answer-btn" class="btn btn-primary btn-block">
+                            Check answer
+                        </button>
+                        <p class="text-center" id="answer-text">Please enter an answer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <button class="btn btn-primary" id="clear-btn">Clear</button> -->
+    </body>
+    </html>
